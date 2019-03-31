@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CELA-Tags_Service_Models", "CELA-Tags_Service_Models\CELA-Tags_Service_Models.csproj", "{8556D4E4-0D3B-4531-B80C-893B1217F839}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CELA-Tags_Parsing_Service", "CELA-Tags_Parsing_Service\CELA-Tags_Parsing_Service.csproj", "{78E19CDA-49E8-4233-9BB1-16D6E712D560}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CELA-Tags_Parsing_ServiceTests", "CELA-Tags_Parsing_ServiceTests\CELA-Tags_Parsing_ServiceTests.csproj", "{6A9BC29F-9B35-420A-92F4-A8DCEC9C64F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CELA_Tags_Parsing_ServiceTestUtilities", "CELA_Tags_Parsing_ServiceTestUtilities\CELA_Tags_Parsing_ServiceTestUtilities.csproj", "{9B8DF1AA-85B1-4A60-8BC8-A66AEFE91C47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CELA-Knowledge_Management_Models", "CELA-Knowledge_Management_Models\CELA-Knowledge_Management_Models.csproj", "{A93C0E6A-6AFE-4F64-B735-0CF8119AD021}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CELA-Knowledge_Managment", "CELA-Knowledge_Managment\CELA-Knowledge_Managment.csproj", "{4F7269FB-67B7-465F-BF25-7ECD70407896}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CELA-Knowledge_Management_Assistant", "CELA-Knowledge_Management_Assistant\CELA-Knowledge_Management_Assistant.csproj", "{8739C9C7-06D4-4053-A469-B4BF7C4BC556}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CELA_Tag_Hive_Graph_Data_Processing", "CELA-Tag_Hive_Data_Processing\CELA_Tag_Hive_Graph_Data_Processing.csproj", "{3AD4D3B7-7252-43DA-8D58-79A91ED8BFFE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CELA-Knowledge_Management_Data_Services", "CELA-Knowledge_Management_Data_Services\CELA-Knowledge_Management_Data_Services.csproj", "{6D8BC8A4-9750-4560-A544-7E53CD47948D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CELA-Knowledge_Management_Data_Servicestests", "CELA-Knowledge_Management_Data_Services.tests\CELA-Knowledge_Management_Data_Servicestests.csproj", "{C58D9225-E2A2-417C-8745-D78A091BAB72}"
+EndProject
+Project("{F5034706-568F-408A-B7B3-4D38C6DB8A32}") = "CELA-Tag_Parsing_Service_Configuration_Utilities", "CELA-Tag_Parsing_Service_Configuration_Utilities\CELA-Tag_Parsing_Service_Configuration_Utilities.pssproj", "{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8556D4E4-0D3B-4531-B80C-893B1217F839}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8556D4E4-0D3B-4531-B80C-893B1217F839}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8556D4E4-0D3B-4531-B80C-893B1217F839}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8556D4E4-0D3B-4531-B80C-893B1217F839}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78E19CDA-49E8-4233-9BB1-16D6E712D560}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78E19CDA-49E8-4233-9BB1-16D6E712D560}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78E19CDA-49E8-4233-9BB1-16D6E712D560}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78E19CDA-49E8-4233-9BB1-16D6E712D560}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A9BC29F-9B35-420A-92F4-A8DCEC9C64F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A9BC29F-9B35-420A-92F4-A8DCEC9C64F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A9BC29F-9B35-420A-92F4-A8DCEC9C64F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A9BC29F-9B35-420A-92F4-A8DCEC9C64F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B8DF1AA-85B1-4A60-8BC8-A66AEFE91C47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B8DF1AA-85B1-4A60-8BC8-A66AEFE91C47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B8DF1AA-85B1-4A60-8BC8-A66AEFE91C47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B8DF1AA-85B1-4A60-8BC8-A66AEFE91C47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A93C0E6A-6AFE-4F64-B735-0CF8119AD021}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A93C0E6A-6AFE-4F64-B735-0CF8119AD021}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A93C0E6A-6AFE-4F64-B735-0CF8119AD021}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A93C0E6A-6AFE-4F64-B735-0CF8119AD021}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F7269FB-67B7-465F-BF25-7ECD70407896}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F7269FB-67B7-465F-BF25-7ECD70407896}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F7269FB-67B7-465F-BF25-7ECD70407896}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F7269FB-67B7-465F-BF25-7ECD70407896}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8739C9C7-06D4-4053-A469-B4BF7C4BC556}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8739C9C7-06D4-4053-A469-B4BF7C4BC556}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8739C9C7-06D4-4053-A469-B4BF7C4BC556}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8739C9C7-06D4-4053-A469-B4BF7C4BC556}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AD4D3B7-7252-43DA-8D58-79A91ED8BFFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AD4D3B7-7252-43DA-8D58-79A91ED8BFFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AD4D3B7-7252-43DA-8D58-79A91ED8BFFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AD4D3B7-7252-43DA-8D58-79A91ED8BFFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D8BC8A4-9750-4560-A544-7E53CD47948D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D8BC8A4-9750-4560-A544-7E53CD47948D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D8BC8A4-9750-4560-A544-7E53CD47948D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D8BC8A4-9750-4560-A544-7E53CD47948D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C58D9225-E2A2-417C-8745-D78A091BAB72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C58D9225-E2A2-417C-8745-D78A091BAB72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C58D9225-E2A2-417C-8745-D78A091BAB72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C58D9225-E2A2-417C-8745-D78A091BAB72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {85904322-8A45-4773-8781-BC14400EB7FB}
+	EndGlobalSection
+EndGlobal

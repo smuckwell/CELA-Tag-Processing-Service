@@ -1,0 +1,55 @@
+﻿<div class="jumbotron">
+    <h1>#Tagulous-A CELA Productivity Hackers Proof of Concept</h1>
+
+    <p class="lead">You can be fabulously productive using the tags you add to your written communications. That's #Tagulous!</p>
+    <p><a href="/api/Version">Version Information</a></p>
+</div>
+<div class="row">
+    <div>
+        <h2>Try out #Tagulous</h2>
+        <p>Are you interested in trying out #Tagulous? The easiest way is to install a Flow that builds upon #Tagulous.</p>
+        <h3>Install An Existing Flow</h3>
+        <h4>Competition Law Group Pilot</h4>
+        <p>The general Tagulous prototype CELA's Competition Law Group is piloting is <a href="~/Content/Flows/Tagulous-CompetitionLawGroupPilot-V3_20181231205908.zip">here</a>. You use this Flow by adding character strings without spaces preceded by <i>#</i> to you sent emails. This Flow parses the tags found in emails found in the sent items folder and stores the result in Azure Table storage. This version also includes "ordinal tags" feature that takes tags found on successive new lines and outputs them to a structured column. The results of this Azure Table are output to a Power BI report that provides a summary of tag usage.</p>
+        <h4>#TaskMe</h4>
+        <p>To be added.</p>
+        <h4>#ArchiveTo and #SendTo</h4>
+        <p>#ArchiveTo Flow is <a href="~/Content/Flows/Tagulous-SendArchiveTotaggedemailtoOneNotereceivedbyLexOps_20190109061701.zip">here</a> and #SendTo Flow is <a href="~/Content/Flows/Tagulous-ForwardSendTotaggedemailsreceivedbyLexOps_20190109061549.zip">here</a>. You use these Flows by adding #ArchiveTo followed by a targeting tag or #SendTo followed by a targeting tag. The targeting tags are defined in Sharepoint Lists. When these Flows find the respective tags and their targets they create a page with the email content in OneNote or forward the email to the corresponding address, respectively.</p>
+        <h4>KnowM (Knowledge Management)</h4>
+        <p>The knowledge management (KnowM, pronounced "gnome") prototype will be shared in the future. You use this Flow by adding [DEPLOYED_SYSTEM_ACCOUNT]@microsoft.com to the To/Cc/Bcc line of an email and copying in a matter tag using the pattern <i>#MID-NNNNN</i> where <i>N</i> is replaced with numbers. The Flow in the recipient account parses the email, if it finds tags it saves the email information to Azure table storage, and if among the tags it finds a matter ID it saves any attachments to Azure Blob Storage.</p>
+        <p>General Flow import and installation instructions will be shared.</p>
+        <h3>Build on the APIs</h3>
+        <p>You can build your own functionality using #Tagulous by calling the parsing APIs.</p>
+        <p><a href="../swagger" class="btn btn-primary btn-lg">Swagger API Documentation &raquo;</a></p>
+        <h3>Build It Yourself</h3>
+        The source code for the tag parsing service is available to Microsoft employees <a href="https://celads.visualstudio.com/CELAProductivity/_git/CELA-Tagulous_Parsing_Service">here</a>. 
+        <h2>What is #Tagulous?</h2>
+        <p>At the 2018 Microsoft Global Hackathon a small team of technical, business, and legal professionals within Microsoft's Corporate, External, and Legal Affairs department decided to make email do more for them (<A href="https://aka.ms/tagulous">project page available to Microsoft employees</A>). <a href="https://aka.ms/tagulousvideo">The prototype video</a> shows how adding a couple tags to an email can automatically archive the email to OneNote and create a task in To-Do with full context.</p>
+        <p>#Tagulous is a simple, lightweight application of Microsoft technologies that helps end users and businesses achieve more using their most common activity: text-based communications like email, Teams, and Yammer. #Tagulous helps customers create automated workflows and build their data using the tools and fluency our end users already have.</p>
+        <p>#Tagulous creates value for both end users and businesses, anchored by Office 365. End users reap the benefits of increased productivity and improved workflows within their modern workplace. They can create tasks, archive emails, and automatically drive other common productivity patterns without leaving their communication canvas. And business customers are given a flexible path to digital transformation. They can automate their work and create domain specific data with improved governance. These data can help them advance their AI ambitions, all supported by Microsoft’s Data & AI stack.</p>
+        <p>#Tagulous is a little idea with a big impact. Add a hashtag to an email to drive your common actions and define your work. You no longer have to open another window or app, or navigate through menus to get your work done. It's simple, powerful, and mobile friendly. If you are an Office 365 customer you can build solutions like this for yourself using the tools you already have.</p>
+        <p><b>How can we maximize the value of #Tagulous for our customers?</b></p>
+        <p>We've started with a proof of concept implementation and architecture (shown above) incorporating: Flow, Azure, Outlook, OneNote, and ToDo.</p>
+        <p>#Tagulous decorates communications with structured markers your business can define, tags. The tags allow you to augment unstructured data in email, chats, and other artifacts to enable ML and AI scenarios. #Tagulous causes your end users to create your training data.</p>
+        <p>
+            <b>We hope this product grows and integrates with more Microsoft services, including the following:</b>
+            <ul>
+                Enterprise tag library support in Office 365
+            </ul>
+            <ul>
+                SwiftKey integration
+            </ul>
+            <ul>
+                Dynamics 365 support
+            </ul>
+            <ul>
+                Microsoft Graph support
+            </ul>
+            <ul>
+                Automatic installation by tenant administrators for business end users
+            </ul>
+        </p>
+        <H2>Prototype #Tagulous Architecture</H2>
+        <img src="../Content/Tagulous_Architecture.png" />
+    </div>
+</div>

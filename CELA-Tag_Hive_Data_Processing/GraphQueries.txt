@@ -1,0 +1,57 @@
+﻿https://github.com/tinkerpop/gremlin/wiki/Gremlin-Steps
+http://tinkerpop.apache.org/docs/3.1.0-incubating/tutorials-getting-started.html
+
+// Get a vertex
+g.V('testemail@microsoft.com')
+
+// Get all communicators
+g.V().hasLabel('communicator').values('id')
+
+// Get all tags
+g.V().hasLabel('tag')
+
+// Get all tags, only showing the id field
+g.V().hasLabel('tag').values('id')
+
+// Get a specific tag
+g.V().hasLabel('tag').has('id', eq('tagulous'))
+
+g.V('testemail@microsoft.com').outE('sends').inV().hasLabel('tag')
+
+// Get the most commonly sent tags
+g.V().outE("sender").order().by('sent', decr)
+
+
+// Get all edges labeled recipient
+g.V().inE("recipient")
+
+// Get all edges
+g.E()
+
+// Get all of the communicators who have received a tag from the sender
+g.V('testemail@microsoft.com').out().hasLabel('tag').out().hasLabel('communicator')
+
+
+//Get the communicators who receive the most repeat tag exposure
+g.E().hasLabel('recipient').has('primary recipient', gt(1))
+
+//Get the edges that branch off "diversity" vertex
+g.V("diversity").outE("recipient").has('primary recipient', gt(1))
+//Get the vertices that branch off "diversity" vertex
+g.V("diversity").outE("recipient").has('primary recipient', gt(1)).inV()
+
+// Does not currently work
+
+// Should get all of the recipients of the selected tag
+g.V().hasLabel('tag').has('id', eq('tagulous')).outE('primary recipient').inV().hasLabel('communicator')
+
+//Graph Version 2
+
+//Get the people who send emails containing the tag the most
+g.V().has('name', '{0}').inE('relates to').outV().inE('sends').outV().project('a').by('name').select('a').groupCount()
+
+//Get the list of tags
+g.V().haslabel('tag').project('name').by('name')
+
+//Group the conversations that are associated with a conversation id
+g.V().has('label', 'communication').project('a').by('conversation id').select('a').groupCount()
